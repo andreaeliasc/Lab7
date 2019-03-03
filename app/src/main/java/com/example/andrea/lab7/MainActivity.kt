@@ -1,7 +1,9 @@
 package com.example.andrea.lab7
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,4 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    fun Contacto(view: View){
+        val intent: Intent = Intent(this, NuevoContacto::class.java)
+        startActivity(intent)
+    }
+
+
 }
