@@ -20,6 +20,10 @@
         </activity>
         <activity android:name=".EditarContacto">
         </activity>
+        <activity android:name=".Main2Activity">
+        </activity>
+        <activity android:name=".DataBasee">
+        </activity>
     </application>
 
 </manifest>

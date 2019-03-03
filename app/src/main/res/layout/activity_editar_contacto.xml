@@ -16,7 +16,7 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.171" app:layout_constraintVertical_bias="0.932"
-            android:onClick="retrun"/>
+            android:onClick="regreso"/>
     <Button
             android:text="Editar"
             android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/newName" android:layout_marginTop="8dp"
+            android:id="@+id/NAME" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
@@ -43,14 +43,14 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/newTel"
+            android:id="@+id/CEL"
             tools:layout_editor_absoluteY="260dp" tools:layout_editor_absoluteX="81dp" android:text="Phone"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/newEmail" android:layout_marginTop="8dp"
+            android:id="@+id/EMAIL" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="7dp"
