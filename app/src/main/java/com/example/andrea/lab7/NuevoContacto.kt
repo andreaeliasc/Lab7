@@ -15,15 +15,34 @@ class NuevoContacto : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_contacto)
     }
-
-fun addContact(view: View){
-    val values = ContentValues()
-    values.put(DataBase.NOMBRE, NAME.text.toString())
-
-
-}
-    fun REGRESO (view: View){
-        val intent: Intent = Intent(this,MainActivity::class.java)
+    fun REGRESO(view: View) {
+        val intent: Intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
+
+    fun AGREGAR(view: View) {
+        val values = ContentValues()
+        values.put(DataBase.NOMBRE, NewName.text.toString())
+       values.put(DataBase.CEL, Celular.text.toString())
+        values.put(DataBase.EMAIL, Correo.text.toString())
+
+
+        if (NewName.text.toString() !="" && Celular.text.toString()!=""&& Correo.text.toString()!=""){
+            val uri = contentResolver.insert(DataBase.db_URI,values)
+            MAIN.Cn.add(Cn(Celular.text.toString(),NewName.text.toString(),Correo.text.toString()))
+
+            Toast.makeText(applicationContext,"LOGRADO",Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(applicationContext,"FALLA",Toast.LENGTH_SHORT).show()
+        }
+
+        NewName.setText("")
+        Celular.setText("")
+        Correo.setText("")
+    }
+
+
+
+
 }

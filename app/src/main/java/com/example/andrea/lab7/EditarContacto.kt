@@ -16,13 +16,13 @@ class EditarContacto : AppCompatActivity() {
 
     fun edit(view: View){
         val values= ContentValues()
-        values.put(DataBase.NOMBRE, NAME.text.toString())
-        values.put(DataBase.CEL, Phone.text.toString())
+        values.put(DataBase.NOMBRE, ME.text.toString())
+        values.put(DataBase.CEL, Phine.text.toString())
         values.put(DataBase.EMAIL, Mail.text.toString())
-        MAIN.Cn.set(intent.getIntExtra("item",0), Cn(Phone.text.toString(),NAME.text.toString(),Mail.text.toString()))
+        MAIN.Cn.set(intent.getIntExtra("item",0), Cn(Phine.text.toString(),ME.text.toString(),Mail.text.toString()))
         Toast.makeText(applicationContext,"Se ha editado el contacto de manera exitosa", Toast.LENGTH_SHORT).show()
-        NAME.setText("")
-        Phone.setText("")
+        ME.setText("")
+        Phine.setText("")
         Mail.setText("")
     }
 }
