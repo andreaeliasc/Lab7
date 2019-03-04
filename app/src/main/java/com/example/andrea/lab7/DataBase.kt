@@ -33,8 +33,9 @@ class DataBase: ContentProvider() {
         internal val db_URI = Uri.parse(URL)
         internal val ID = "_id"
         internal val NOMBRE = "nombre"
-        internal val EMAIL = "correo"
+
         internal val CEL = "cel"
+        internal val EMAIL = "correo"
 
 
 
